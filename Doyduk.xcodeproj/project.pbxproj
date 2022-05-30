@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0104AD1282F8DA400674281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0104AD0282F8DA400674281 /* AppDelegate.swift */; };
+		B0104AD3282F8DA400674281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0104AD2282F8DA400674281 /* SceneDelegate.swift */; };
+		B0104AD8282F8DA400674281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0104AD6282F8DA400674281 /* Main.storyboard */; };
+		B0104ADA282F8DA500674281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0104AD9282F8DA500674281 /* Assets.xcassets */; };
+		B0104ADD282F8DA500674281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0104ADB282F8DA500674281 /* LaunchScreen.storyboard */; };
+		B0104AE6282F9E1A00674281 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0104AE5282F9E1A00674281 /* LoginVC.swift */; };
+		B0104AE8282FA7B200674281 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0104AE7282FA7B200674281 /* MainVC.swift */; };
+		B04AF165282FAF10008F0097 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04AF164282FAF10008F0097 /* MainCell.swift */; };
+		B04AF1672830DE9E008F0097 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04AF1662830DE9E008F0097 /* API.swift */; };
+		B04AF16A2830E1E0008F0097 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04AF1692830E1E0008F0097 /* BaseModel.swift */; };
+		B0C9B8FD2830F58300A7F896 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B8FC2830F58300A7F896 /* Constants.swift */; };
+		B0C9B9002830FAC000A7F896 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B8FF2830FAC000A7F896 /* DishCell.swift */; };
+		B0C9B9022830FBE700A7F896 /* DishesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B9012830FBE700A7F896 /* DishesVC.swift */; };
+		B0C9B904283105FB00A7F896 /* DishDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B903283105FB00A7F896 /* DishDetailVC.swift */; };
+		F7508ECB6A446995FEF2EFDB /* Pods_Doyduk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ADAAC8EA2A0C52573DC087 /* Pods_Doyduk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09BE88279EBDDB8361AE0EF8 /* Pods-Doyduk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doyduk.release.xcconfig"; path = "Target Support Files/Pods-Doyduk/Pods-Doyduk.release.xcconfig"; sourceTree = "<group>"; };
+		684681EB48BEC07D4CF9D0FD /* Pods-Doyduk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doyduk.debug.xcconfig"; path = "Target Support Files/Pods-Doyduk/Pods-Doyduk.debug.xcconfig"; sourceTree = "<group>"; };
+		83ADAAC8EA2A0C52573DC087 /* Pods_Doyduk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doyduk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0104ACD282F8DA400674281 /* Doyduk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doyduk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0104AD0282F8DA400674281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0104AD2282F8DA400674281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0104AD7282F8DA400674281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0104AD9282F8DA500674281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0104ADC282F8DA500674281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0104ADE282F8DA500674281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0104AE4282F8FF100674281 /* Doyduk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Doyduk.entitlements; sourceTree = "<group>"; };
+		B0104AE5282F9E1A00674281 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B0104AE7282FA7B200674281 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B04AF164282FAF10008F0097 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		B04AF1662830DE9E008F0097 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B04AF1692830E1E0008F0097 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B0C9B8FC2830F58300A7F896 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0C9B8FF2830FAC000A7F896 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		B0C9B9012830FBE700A7F896 /* DishesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesVC.swift; sourceTree = "<group>"; };
+		B0C9B903283105FB00A7F896 /* DishDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0104ACA282F8DA400674281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7508ECB6A446995FEF2EFDB /* Pods_Doyduk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1212F46640AB376292863283 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				684681EB48BEC07D4CF9D0FD /* Pods-Doyduk.debug.xcconfig */,
+				09BE88279EBDDB8361AE0EF8 /* Pods-Doyduk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		765C785FBE610694AF68E4CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83ADAAC8EA2A0C52573DC087 /* Pods_Doyduk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0104AC4282F8DA400674281 = {
+			isa = PBXGroup;
+			children = (
+				B0104ACF282F8DA400674281 /* Doyduk */,
+				B0104ACE282F8DA400674281 /* Products */,
+				1212F46640AB376292863283 /* Pods */,
+				765C785FBE610694AF68E4CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0104ACE282F8DA400674281 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0104ACD282F8DA400674281 /* Doyduk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0104ACF282F8DA400674281 /* Doyduk */ = {
+			isa = PBXGroup;
+			children = (
+				B0104AE4282F8FF100674281 /* Doyduk.entitlements */,
+				B0104AD0282F8DA400674281 /* AppDelegate.swift */,
+				B0104AD2282F8DA400674281 /* SceneDelegate.swift */,
+				B0C9B8FE2830FAB000A7F896 /* Cell */,
+				B04AF1662830DE9E008F0097 /* API.swift */,
+				B0C9B8FB2830F57900A7F896 /* Helper */,
+				B04AF1682830E1D2008F0097 /* Model */,
+				B0104AE9282FAC2200674281 /* ViewController */,
+				B0104AD6282F8DA400674281 /* Main.storyboard */,
+				B0104AD9282F8DA500674281 /* Assets.xcassets */,
+				B0104ADB282F8DA500674281 /* LaunchScreen.storyboard */,
+				B0104ADE282F8DA500674281 /* Info.plist */,
+			);
+			path = Doyduk;
+			sourceTree = "<group>";
+		};
+		B0104AE9282FAC2200674281 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0104AE5282F9E1A00674281 /* LoginVC.swift */,
+				B0104AE7282FA7B200674281 /* MainVC.swift */,
+				B0C9B9012830FBE700A7F896 /* DishesVC.swift */,
+				B0C9B903283105FB00A7F896 /* DishDetailVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B04AF1682830E1D2008F0097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B04AF1692830E1E0008F0097 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0C9B8FB2830F57900A7F896 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9B8FC2830F58300A7F896 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B0C9B8FE2830FAB000A7F896 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B04AF164282FAF10008F0097 /* MainCell.swift */,
+				B0C9B8FF2830FAC000A7F896 /* DishCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0104ACC282F8DA400674281 /* Doyduk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0104AE1282F8DA500674281 /* Build configuration list for PBXNativeTarget "Doyduk" */;
+			buildPhases = (
+				8B85D8F963DB74796BAC189B /* [CP] Check Pods Manifest.lock */,
+				B0104AC9282F8DA400674281 /* Sources */,
+				B0104ACA282F8DA400674281 /* Frameworks */,
+				B0104ACB282F8DA400674281 /* Resources */,
+				36AFD359627D6D33967FD16C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Doyduk;
+			packageProductDependencies = (
+			);
+			productName = Doyduk;
+			productReference = B0104ACD282F8DA400674281 /* Doyduk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0104AC5282F8DA400674281 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B0104ACC282F8DA400674281 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = B0104AC8282F8DA400674281 /* Build configuration list for PBXProject "Doyduk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0104AC4282F8DA400674281;
+			packageReferences = (
+			);
+			productRefGroup = B0104ACE282F8DA400674281 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0104ACC282F8DA400674281 /* Doyduk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0104ACB282F8DA400674281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0104ADD282F8DA500674281 /* LaunchScreen.storyboard in Resources */,
+				B0104ADA282F8DA500674281 /* Assets.xcassets in Resources */,
+				B0104AD8282F8DA400674281 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36AFD359627D6D33967FD16C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doyduk/Pods-Doyduk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doyduk/Pods-Doyduk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Doyduk/Pods-Doyduk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B85D8F963DB74796BAC189B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doyduk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0104AC9282F8DA400674281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C9B9022830FBE700A7F896 /* DishesVC.swift in Sources */,
+				B0104AD1282F8DA400674281 /* AppDelegate.swift in Sources */,
+				B0C9B904283105FB00A7F896 /* DishDetailVC.swift in Sources */,
+				B0104AE8282FA7B200674281 /* MainVC.swift in Sources */,
+				B04AF16A2830E1E0008F0097 /* BaseModel.swift in Sources */,
+				B0C9B9002830FAC000A7F896 /* DishCell.swift in Sources */,
+				B0104AD3282F8DA400674281 /* SceneDelegate.swift in Sources */,
+				B0104AE6282F9E1A00674281 /* LoginVC.swift in Sources */,
+				B04AF1672830DE9E008F0097 /* API.swift in Sources */,
+				B04AF165282FAF10008F0097 /* MainCell.swift in Sources */,
+				B0C9B8FD2830F58300A7F896 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0104AD6282F8DA400674281 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0104AD7282F8DA400674281 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0104ADB282F8DA500674281 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0104ADC282F8DA500674281 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0104ADF282F8DA500674281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0104AE0282F8DA500674281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0104AE2282F8DA500674281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684681EB48BEC07D4CF9D0FD /* Pods-Doyduk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Doyduk/Doyduk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA8L248WV9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Doyduk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kameranıza ihtiyacımız var";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.appcent.Doyduk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B0104AE3282F8DA500674281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BE88279EBDDB8361AE0EF8 /* Pods-Doyduk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Doyduk/Doyduk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA8L248WV9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Doyduk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kameranıza ihtiyacımız var";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.appcent.Doyduk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0104AC8282F8DA400674281 /* Build configuration list for PBXProject "Doyduk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0104ADF282F8DA500674281 /* Debug */,
+				B0104AE0282F8DA500674281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0104AE1282F8DA500674281 /* Build configuration list for PBXNativeTarget "Doyduk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0104AE2282F8DA500674281 /* Debug */,
+				B0104AE3282F8DA500674281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0104AC5282F8DA400674281 /* Project object */;
+}
